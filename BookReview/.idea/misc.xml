@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android_ex/BookReview/app/src/main/res/drawable/background_gray_stroke_raidus_8.xml" value="0.1" />
-        <entry key="..\:/android_ex/BookReview/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/android_ex/BookReview/app/src/main/res/layout/activity_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_ex/BookReview/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/android_ex/BookReview/app/src/main/res/layout/item_book.xml" value="0.33" />
+        <entry key="..\:/android_ex/BookReview/app/src/main/res/layout/item_history.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>

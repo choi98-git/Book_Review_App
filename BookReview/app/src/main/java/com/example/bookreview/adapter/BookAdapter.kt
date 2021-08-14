@@ -9,13 +9,17 @@ import com.bumptech.glide.Glide
 import com.example.bookreview.databinding.ItemBookBinding
 import com.example.bookreview.model.Book
 
-class BookAdapter:ListAdapter<Book, BookAdapter.BookItemViewHolder>(diffUtill) {
+class BookAdapter(private val itemClickedListener: (Book) -> Unit):ListAdapter<Book, BookAdapter.BookItemViewHolder>(diffUtill) {
 
     inner class BookItemViewHolder(private val binding: ItemBookBinding): RecyclerView.ViewHolder(binding.root){
 
         fun bind(bookModel: Book){
             binding.titleTextView.text = bookModel.title
             binding.descriptionTextView.text = bookModel.description
+
+            binding.root.setOnClickListener {
+                itemClickedListener(bookModel)
+            }
 
             Glide
                 .with(binding.coverImageView.context)
